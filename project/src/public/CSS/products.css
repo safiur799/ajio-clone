@@ -1,0 +1,286 @@
+
+
+
+#products {
+  width: 70%;
+  /* border: 2px solid orangered; */
+  position: absolute;
+  right: 5%;
+  top: 22%;
+}
+
+.default {
+  width: 100%;
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.summary{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.summary p{
+   width: 80%;
+   margin: auto;
+}
+
+#list div img {
+  width: 100%;
+}
+
+#list div {
+  /* border: 2px solid blue; */
+  margin-bottom: 0%;
+  padding: 0;
+}
+
+#list div p {
+  margin: 0;
+  text-align: center;
+ 
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.head h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+
+.listNav {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin: auto;
+  height: 40px;
+  /* margin-bottom: 10px; */
+}
+
+.pattern{
+  border-bottom: 1px solid  #c2c2c2;
+  border-top: 1px solid  #c2c2c2;
+  background-color: #f9f9f9;
+  height: 10vh;
+  display: flex;
+align-items: center;
+margin-bottom: 20px;
+width: 100%;
+margin: auto;
+margin-bottom: 20px;
+}
+
+.mid-Left{
+  /* border: 2px solid blue; */
+  width: 18%;
+  position: absolute;
+   top: 22%;
+   left: 5%;
+}
+
+#top{
+  /* position: relative; */
+  /* border: 1px solid green; */
+  width: 100%;
+}
+
+.change {
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  gap: 10px;
+}
+
+.sort {
+  display: flex;
+  /* border: 2px solid tomato; */
+  width: 30%;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pattern {
+  display: flex;
+}
+
+/* Filter section */
+
+.filter {
+  /* border: 2px solid red; */
+  width: 100%;
+  /* position: relative; */
+  /* top: 135px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#top h1{
+  margin-top: 0;
+}
+
+#up {
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  right: 15%; 
+}
+
+#down {
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  right: 15%; 
+}
+
+
+.caty-1 {
+  width: 60%;
+  position: relative;
+  /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-1 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-1 h3 {
+  /* border: 2px solid blue; */
+  text-align: center;
+}
+
+.check-1,.check-2,.all {
+  display: none;
+  /* border: 2px solid red; */
+}
+
+
+.caty-2 {
+  width: 60%;
+  position: relative;
+  /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-2 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-2 h3 {
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+
+.caty-3 {
+  width: 60%;
+  position: relative;
+  /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-3 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-3 h3 {
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.caty-4 {
+  width: 60%;
+  position: relative;
+  /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-4 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-4 h3 {
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.caty-5 {
+  width: 60%;
+  position: relative;
+    /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-5 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-5 h3 {
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.caty-6 {
+  width: 60%;
+  position: relative;
+   /* border-bottom: 2px solid whitesmoke; */
+
+}
+.caty-6 button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.caty-6 h3 {
+  /* border: 1px solid blue; */
+  text-align:center;
+}
+
+button{
+  border: none;
+  background-color: white;
+  /* font-weight: bold; */
+  font-size:large;
+}
+
+.foot{
+  margin-top: 400vh;
+}
+
+
+ hr{
+   border-top: 2px solid whitesmoke;
+}
+
+.all input,label{
+  position: relative;
+  left: 30px;
+}
