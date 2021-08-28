@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+    <div class="container5">
+      <div class="image1" id="image1">
+        <a href="/">
+          <img
+            src="https://assets.ajio.com/static/img/Ajio-Logo.svg"
+            type="image"
+          />
+        </a>
+      </div>
+      <div class="image1 img">
+        <img src="https://www.linkpicture.com/q/x_12.png" type="image" />
+      </div>
+      <div class="para8">
+        <div class="para9">Hi</div>
+        <div class="para9" id="image2">My Account</div>
+        <div class="para9" id="image2">
+          <a href="customer.html">Customer Care</a>
+        </div>
+      </div>
+    </div>
+    <% data.forEach((el) =>{ %>
+    <div class="box">
+      <img src="<%=el.img %>" alt="" />
+      <h4><%=el.details %></h4>
+      <div class="inside_box">
+        <span id="mr">Size</span>
+        <span>Qty</span>
+      </div>
+    </div>
+
+    <% }); %>
+  </body>
+</html>
