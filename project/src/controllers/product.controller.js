@@ -21,5 +21,12 @@ router.get("/", async (req, res) => {
     return res.send(err.message);
   }
 });
+router.get("/:id", async (req, res) => {
+  const product = await Product.findById(req.params.id);
+  console.log(product);
+  res.render("products/shop.ejs", {
+    product: product,
+  });
+});
 
 module.exports = router;

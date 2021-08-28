@@ -1,0 +1,9 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(3);
+  grid-gap: 10px;
+}
+
+.green-text {
+  color: red;
+}
