@@ -47,7 +47,6 @@ body {
   height: 150px;
   width: 60%;
   margin: 4% 7%;
-  outline: red solid;
 }
 .box > img {
   float: left;
@@ -64,10 +63,17 @@ body {
 .inside_box {
   float: left;
   width: 15%;
-  outline: solid purple;
   margin-left: 5px;
   margin-top: 2.7%;
+  margin-right: 10px;
 }
 #mr {
   margin-right: 3%;
+}
+.price {
+  float: left;
+  outline: rebeccapurple solid;
+  width: 10%;
+  height: 10px;
+  margin-top: 2.7%;
 }
