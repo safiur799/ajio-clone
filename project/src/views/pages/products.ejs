@@ -8,6 +8,14 @@
     <link rel="icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/products.css">
 
@@ -21,7 +29,7 @@
         </div>
         <div class="menu-container">
             <div class="guest-header">
-                <span class="login-form">Sign In / Join AJIO</span>
+                <div class="login-form"><a href="">Sign In / Join AJIO</a></div>
                 <div class="login-modal">
                     <div class="login-content close">X</div>
                     <div class="login-content title">
@@ -44,7 +52,7 @@
                     </div>
 
                 </div>
-                <a href="customer.html">Customer Care</a>
+                <div class="login-form"><a href="customer">Customer Care</a></div>
             </div>
             <div class="right-header">
                 <a id="a" class="men" href="">MEN</a>
@@ -122,8 +130,8 @@
                     <input type="search" placeholder="  Search  AJIO">
                     </input>
                 </form>
-                <span class="material-icons icon hanger">
-                    checkroomn
+                <span  class="material-icons icon hanger">
+                    checkroom
                 </span>
                  <a class="cart-icon" href=""><span class="material-icons icon bag">
                     shopping_bag
@@ -244,7 +252,7 @@
     <div id="products">
       <div class="heading">
         <div class="head">
-          <h3>MEN'S</h3>
+          <h5>MEN'S</h5>
           <h1>Backpacks</h1>
         </div>
 
@@ -254,20 +262,23 @@
             Pack some style with AJIO’s cool collection of backpacks for men .
             Whether it’s to carry a laptop to work or for convenient luggage for
             travelling, find the perfect design from backpack brands such as
-            Wildcraft and United Colors of Benetton ,
+            Wildcraft and United Colors of Benetton <a href="">Read More</a>
           </p>
         </div>
       </div>
 
-      <div class="pattern">
+<div class="outer">
+        <div class="pattern">
         <div class="listNav">
           <h3>GRID</h3>
-          <a onclick="three()"
-            ><img src="https://www.linkpicture.com/q/grid_1.png" type="image"
+            <div class="group">
+                        <a onclick="three()"
+            ><img src="https://www.linkpicture.com/q/three.png" type="image"
           /></a>
           <a onclick=" changeGrid()"
-            ><img src="https://www.linkpicture.com/q/grid3.png" type="image"
+            ><img src="https://www.linkpicture.com/q/four_1.png" type="image"
           /></a>
+            </div>
         </div>
 
         <div class="sort">
@@ -281,6 +292,7 @@
           </select>
         </div>
       </div>
+</div>
 
       <div id="list"></div>
     </div>

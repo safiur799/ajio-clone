@@ -33,9 +33,8 @@ function couponApply() {
   }
 }
 
-function goToCart() {
-  alert("ITEM ADDED TO CART");
-}
+
+
 function delevery() {
-  window.location.href = "delivery.html";
+  window.location.href = "delivery";
 }

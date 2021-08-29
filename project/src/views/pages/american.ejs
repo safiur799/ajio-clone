@@ -8,20 +8,27 @@
     <link rel="icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 
+
+
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/american.css">
     <title>Ajio.com | Shop Online the Latest Fashion in apparels brands in India | Reliance Ajio.com</title>
 </head>
 
 <body>
-    <header class="main-header shadow">
+ <header class="main-header shadow">
         <div class="logo">
             <a href="index"><img src="https://assets.ajio.com/static/img/Ajio-Logo.svg"></a>
         </div>
         <div class="menu-container">
             <div class="guest-header">
-                <span class="login-form">Sign In / Join AJIO</span>
+                <div class="login-form"><a href="">Sign In / Join AJIO</a></div>
                 <div class="login-modal">
                     <div class="login-content close">X</div>
                     <div class="login-content title">
@@ -44,7 +51,7 @@
                     </div>
 
                 </div>
-                <a href="customer.html">Customer Care</a>
+                <div class="login-form"><a href="customer">Customer Care</a></div>
             </div>
             <div class="right-header">
                 <a id="a" class="men" href="">MEN</a>
@@ -88,7 +95,7 @@
                         </div>
                         <div class="cat-3">
                             <p><b>ACCESORIES</b></p>
-                            <p><a class="backpacks" href="products.html">Backpacks</a></p>
+                            <p><a class="backpacks" href="product">Backpacks</a></p>
                             <p>Bags & Wallets</p>
                             <p>Belts</p>
                             <p>Caps & Hats</p>
@@ -122,15 +129,36 @@
                     <input type="search" placeholder="  Search  AJIO">
                     </input>
                 </form>
-                <span class="material-icons icon hanger">
+                <span  class="material-icons icon hanger">
                     checkroom
                 </span>
-                 <a class="cart-icon" href="cart.html"><span class="material-icons icon bag">
+                 <a class="cart-icon" href="cart"><span class="material-icons icon bag">
                     shopping_bag
+                    <div class="cartDiv">
+        <p>Items(s) added to your bag</p>
+        <div class="bagDetails">
+           <div>
+                <img src='https://assets.ajio.com/medias/sys_master/root/h6b/h27/15300666032158/-1117Wx1400H-460556739-red-MODEL.jpg' alt="">
+           </div>
+
+<div>
+    <p>Price : Rs. 1,678  </p>
+    <p>Printed Backpack with </p>
+       <p> Attached Raincover</p>
+    <p>Size FS</p>
+    <p>Qty 1</p>
+</div>
+
+        </div>
+        
+<button     id="proceed">PROCEED TO BAG</button>
+    </div>
                 </span>
                 </a>
             </div>
     </header>
+
+    
 
     <div id="slider"></div>
 
@@ -143,24 +171,28 @@
       />
     </button>
     <div class="details">
-      <h1 class="brand">AMERICAN TOURISTER</h1>
-      <h2>Printed Backpack with Attached Raincover</h2>
-      <h2>Rs. 1,678</h2>
+      <h3 class="brand">AMERICAN TOURISTER</h3>
+      <h3>Printed Backpack with Attached Raincover</h3>
+      <h3>Rs. 1,678</h3>
       <h3 class="price">
         <span style="text-decoration: line-through">Rs. 3,050</span> (45% off)
       </h3>
-      <h4>Price inclusive of all taxes</h4>
+      <h5>Price inclusive of all taxes</h5>
 
-      <button id="B1" onclick="goToCart()">
-       
-
+      <div class="btn-out">
+          <button id="B1" onclick="goToCart()"><span class="material-icons-outlined">shopping_bag</span>
         ADD TO BAG
       </button>
+      </div>
       <h5>HANDPICKED STYLES | ASSURED QUALITY</h5>
-      <button id="B2">
-        <img src="https://img.icons8.com/ios/50/000000/hanger.png" />SAVE TO
+  
+          <button id="B2">
+        <span class="material-icons-outlined">
+checkroom
+</span>SAVE TO
         CLOSET
       </button>
+  
       <h3 class="product">Product Details</h3>
 
       <div class="list">

@@ -1,7 +1,8 @@
 /* @import url(https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Ashopping_bag); */
 
-body {
+* {
   font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
 }
 
 .details {
@@ -17,6 +18,30 @@ body {
   width: 60%;
   text-align: left;
   margin: auto;
+}
+
+.details{
+  margin-top: 20px;
+}
+
+.details h3,h4,h5{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  /* border: 2px solid red; */
+  margin: 2px auto;
+}
+
+.right-header{
+  /* border: 2px solid rebeccapurple; */
+  position: absolute;
+  bottom: 0;
+}
+
+.material-icons-outlined{
+  position: relative;
+  top: 5px;
+  right: 3px;
+  font-weight:lighter;
 }
 
 .details img {
@@ -38,7 +63,7 @@ body {
   position: absolute;
   width: 40%;
   left: 10%;
-  top: 100px;
+  top: 130px;
   cursor: zoom-in;
 }
 
@@ -67,17 +92,28 @@ body {
 #B1 {
   background-color: peru;
   color: white;
-  border: none;
+width: 100%;
+border: 1px solid peru;
 }
 #B1:hover {
   cursor: pointer;
+  border: 1px solid white;
 }
+.btn-out{
+  border: 2px solid peru;
+  margin: auto;
+  width: 50%; 
+}
+
+
 
 #B2 {
   border: 1px solid peru;
   color: peru;
   background-color: white;
 }
+
+
 
 .brand,
 .price {
@@ -94,4 +130,55 @@ body {
 
 .foot {
   margin-top: 130vh;
+}
+
+.cartDiv{
+  min-height: 30vh;
+  width: 20%;
+  /* border: 2px solid rebeccapurple; */
+position: absolute;
+color: #000;
+top:60px;
+right: 200px;
+z-index: 1;
+background-color: #f7f7f7;
+overflow-y: scroll;
+text-align: center;
+ display: none;
+ font-size: medium;
+}
+
+#proceed{
+  background-color: peru;
+  color: white;
+  position: absolute;
+   bottom: 1vh;
+ width: 60%;
+ right: 20%;
+ border: none;
+ padding: 10px;
+
+}
+.cart-icon:hover .cartDiv{
+display: block;
+}
+.bagDetails{
+  border: 1px solid grey;
+  display: flex;
+  font-size: small;
+}
+
+.bagDetails p{
+margin: 0;
+text-align: left;
+}
+
+.bagDetails img{
+  width: 50%;
+}
+
+.bagDetails>div{
+  width: 80%;
+  height:50% ;
+  margin: auto;
 }

@@ -1,5 +1,6 @@
-
-
+/* *{
+  font-family: 'Source Sans Pro', sans-serif;
+} */
 
 #products {
   width: 70%;
@@ -15,15 +16,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  font-family: "Lora", serif;
+  font-size: small;
 }
-.summary{
+.summary {
   margin-top: 20px;
   margin-bottom: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  color: #8f8c89;
+  font-size: 15px;
 }
 
-.summary p{
-   width: 80%;
-   margin: auto;
+.summary p {
+  width: 80%;
+  margin: auto;
+}
+.summary a {
+  text-decoration: none;
 }
 
 #list div img {
@@ -39,7 +49,6 @@
 #list div p {
   margin: 0;
   text-align: center;
- 
 }
 
 .head {
@@ -53,8 +62,15 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+  font-family: "Lora", serif;
+  font-weight: lighter;
 }
 
+.head h5 {
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  color: #b3b7c3;
+}
 
 .listNav {
   /* border: 2px solid red; */
@@ -67,28 +83,61 @@
   /* margin-bottom: 10px; */
 }
 
-.pattern{
-  border-bottom: 1px solid  #c2c2c2;
-  border-top: 1px solid  #c2c2c2;
+.outer {
+  border-bottom: 1px solid #c2c2c2;
+  border-top: 1px solid #c2c2c2;
+  margin-bottom: 20px;
+}
+
+.pattern {
   background-color: #f9f9f9;
   height: 10vh;
   display: flex;
-align-items: center;
-margin-bottom: 20px;
-width: 100%;
-margin: auto;
-margin-bottom: 20px;
+  align-items: center;
+  width: 100%;
+  margin: 3px auto;
 }
 
-.mid-Left{
+.listNav h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  color: #8f8c89;
+  font-size: medium;
+  width: 25%;
+  /* border: 2px solid red; */
+  position: relative;
+  left: 35px;
+}
+
+.listNav img {
+  height: 4vh;
+}
+
+.group {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.mid-Left {
   /* border: 2px solid blue; */
   width: 18%;
   position: absolute;
-   top: 22%;
-   left: 5%;
+  top: 22%;
+  left: 5%;
 }
 
-#top{
+.mid-Left h2 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+
+.mid-Left h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+}
+
+#top {
   /* position: relative; */
   /* border: 1px solid green; */
   width: 100%;
@@ -101,6 +150,8 @@ margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(4, 24%);
   gap: 10px;
+  font-family: "Lora", serif;
+  font-size: small;
 }
 
 .sort {
@@ -110,6 +161,26 @@ margin-bottom: 20px;
   height: 30px;
   justify-content: space-around;
   align-items: center;
+}
+
+.sort h3 {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: normal;
+  color: #8f8c89;
+  font-size: medium;
+}
+
+#opt {
+  padding: 4px;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: normal;
+  color: #836b6b;
+  font-size: small;
+  font-weight: bold;
+}
+
+.all button {
+  font-weight: bold;
 }
 
 .pattern {
@@ -128,7 +199,7 @@ margin-bottom: 20px;
   justify-content: flex-start;
 }
 
-#top h1{
+#top h1 {
   margin-top: 0;
 }
 
@@ -137,7 +208,7 @@ margin-bottom: 20px;
   background-color: white;
   position: absolute;
   top: 25px;
-  right: 15%; 
+  right: 15%;
 }
 
 #down {
@@ -145,15 +216,13 @@ margin-bottom: 20px;
   background-color: white;
   position: absolute;
   top: 25px;
-  right: 15%; 
+  right: 15%;
 }
-
 
 .caty-1 {
   width: 60%;
   position: relative;
   /* border-bottom: 2px solid whitesmoke; */
-
 }
 .caty-1 button {
   position: absolute;
@@ -167,17 +236,17 @@ margin-bottom: 20px;
   text-align: center;
 }
 
-.check-1,.check-2,.all {
+.check-1,
+.check-2,
+.all {
   display: none;
   /* border: 2px solid red; */
 }
-
 
 .caty-2 {
   width: 60%;
   position: relative;
   /* border-bottom: 2px solid whitesmoke; */
-
 }
 .caty-2 button {
   position: absolute;
@@ -191,12 +260,10 @@ margin-bottom: 20px;
   text-align: center;
 }
 
-
 .caty-3 {
   width: 60%;
   position: relative;
   /* border-bottom: 2px solid whitesmoke; */
-
 }
 .caty-3 button {
   position: absolute;
@@ -214,7 +281,6 @@ margin-bottom: 20px;
   width: 60%;
   position: relative;
   /* border-bottom: 2px solid whitesmoke; */
-
 }
 .caty-4 button {
   position: absolute;
@@ -231,8 +297,7 @@ margin-bottom: 20px;
 .caty-5 {
   width: 60%;
   position: relative;
-    /* border-bottom: 2px solid whitesmoke; */
-
+  /* border-bottom: 2px solid whitesmoke; */
 }
 .caty-5 button {
   position: absolute;
@@ -249,8 +314,7 @@ margin-bottom: 20px;
 .caty-6 {
   width: 60%;
   position: relative;
-   /* border-bottom: 2px solid whitesmoke; */
-
+  /* border-bottom: 2px solid whitesmoke; */
 }
 .caty-6 button {
   position: absolute;
@@ -261,26 +325,27 @@ margin-bottom: 20px;
 }
 .caty-6 h3 {
   /* border: 1px solid blue; */
-  text-align:center;
+  text-align: center;
 }
 
-button{
+button {
   border: none;
   background-color: white;
   /* font-weight: bold; */
-  font-size:large;
+  font-size: large;
 }
 
-.foot{
+.foot {
   margin-top: 400vh;
 }
 
-
- hr{
-   border-top: 2px solid whitesmoke;
+hr {
+  border: none;
+  border-top: 2px solid whitesmoke;
 }
 
-.all input,label{
+.all input,
+label {
   position: relative;
   left: 30px;
 }

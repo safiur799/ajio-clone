@@ -73,10 +73,15 @@ slideShow();
 var btn = document.getElementById('B1');
 btn.addEventListener('click', function () {
 
-
-
-
 })
+
+function goToCart() {
+    var cart = document.querySelector('.cartDiv')
+    cart.style.display='block'
+        setTimeout(() => {
+        cart.style.display = 'none';
+    }, 4000);
+}
 
 
 
